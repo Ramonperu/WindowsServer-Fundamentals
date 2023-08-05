@@ -1,6 +1,6 @@
 # FUNDAMENTALS WINDOWS SERVER 2016
 
-Bienvenidos a la guía básica, para principiantes, 
+Bienvenidos a la guía básica, para principiantes, sobre Windows Server 2016 realizada por Ramon Peinado Ruiz.
 
 ## CONCEPTOS BASICOS
 
