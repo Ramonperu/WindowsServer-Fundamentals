@@ -24,11 +24,9 @@ La opción Servidor con Experiencia de escritorio instala la interfaz de usuario
 
   
 
+## ROLES:
+
 <img src="/img/2ºimagenn.PNG"  />
-
-
-
-### ROLES:
 
 Los roles de servidor cumplen los siguientes puntos: 
 
@@ -48,6 +46,8 @@ Los servicios de rol proporcionan o amplían alguna funcionalidad a un rol. Cuan
 
 - El servicio de escritorio remoto que por ejemplo contiene varios servicios que podrán instalarse o no en función de  las necesidades del entorno empresarial
 
+  
+
 ### PROCESO DE INSTALACION DE ROLES Y CARACTERISTICAS
 
 <img src="/img/1ºimagenn.PNG"  />
@@ -64,13 +64,51 @@ Los servicios de rol proporcionan o amplían alguna funcionalidad a un rol. Cuan
 
 6.  Ahora ya se seleccionarán los roles deseados en la página Seleccionar roles del  servidor.
 
-   
+###    ROLES MAS IMPORTANTES
+
+algunos de los roles más importantes para la  configuración de un entorno de red: 
+
+- **Servicios de dominio de Active Directory**: Este rol permite organizar de forma centralizada los diferentes elementos de la  empresa mediante la creación de objetos como usuarios, equipos o grupos de  seguridad. Así mismo, se podrán administrar las políticas de seguridad sobre los usuarios y equipos.
+
+  <img src="/img/4ºimagenn.PNG"  />
+
+- **Servidor DNS:** Este rol proporciona resolución de nombres para las redes TCP/IP. Es más fácil  de administrar cuando está instalado en el mismo servidor que los Servicios de  Dominio de Active Directory. DNS (Sistema de nombres de dominio) permite, de manera jerárquica y distribuida en árbol, establecer nombres a los equipos, servicios o recursos conectados a internet o a una red privada y es capaz de resolver tanto el nombre del dominio a partir de la dirección IP como la dirección IP a partir del nombre de dominio.
+
+  
+
+  <img src="/img/5ºimagenn.PNG"  />
+
+  
+
+- **Servidor DHCP** El servidor de Protocolo de configuración dinámica de host (DHCP) permite  configurar, administrar y proporcionar central y automáticamente direcciones IP y otra configuración de red a los clientes de la red. El protocolo DHCP utiliza tres métodos diferentes para la entrega de  direcciones: 
+
+  - Asignación manual o estática. Asigna una determinada dirección IP a un determinado cliente de la red relacionando la dirección IP con la MAC del cliente. De este modo se  evita que equipos no registrados puedan recibir IP y tener, por tanto, acceso a los diferentes recursos de red. 
+
+  - Asignación automática. Asigna una dirección IP a un cliente de la red y  esa dirección queda asignada a ese cliente hasta que éste la libera.  Cuando el número de clientes del servidor DHCP no varía habitualmente, ésta es una opción recomendable. 
+
+  - Asignación dinámica. El administrador de la red determina un rango de  direcciones a entregar y cada vez que un cliente solicita, se le entrega  una dirección IP. Si el cliente se desconecta de la red, libera la IP automáticamente y cuando se conecta de nuevo recibe otra dirección IP que esté libre en ese momento. 
+
+- **Servicios de archivo y almacenamiento**: Este rol incluye los servicios que se instalan siempre, así como funcionalidad que el usuario puede instalar para ayudar a administrar el almacenamiento y los servidores de archivos. Se consigue así la configuración y administración de uno o varios servidores de archivos que proporcionan ubicaciones centralizadas con un repositorio de ficheros almacenados y compartidos con los clientes de la  red. 
+
+- **Hyper-V Hyper-V**: proporciona servicios que se pueden usar para crear y administrar  máquinas virtuales y sus recursos. 
+
+- **Servidor web (IIS)**: Proporciona una infraestructura de aplicaciones web HTTP, HTTPS o FTP.
+
+
+
+## CARACTERISTICAS
+
+Las características son una serie de programas que no forman parte de los roles, pero pueden contribuir tanto en la mejora de un servicio de rol o la funcionalidad del propio  servidor como equipo.
+
+También existe la posibilidad de que una característica sea una dependencia o  prerrequisito para la instalación de un rol.
+
+<img src="/img/6ºimagenn.PNG"  />
 
 ## BIBLIOGRAFIA y AGRADECIMIENTOS
 
 Esta guía básica no podía haber sido realizada sin la ayuda de este curso:
 
-Operating Systems Basics 																					Cisco Networking Academy.
+Curso Básico STIC - Seguridad en Entornos Windows										CCN
 
 Mencionar también la gran ayuda recibida por parte de toda la comunidad de Windows y sus foros .
 
