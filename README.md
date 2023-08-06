@@ -104,6 +104,103 @@ También existe la posibilidad de que una característica sea una dependencia o 
 
 <img src="/img/6ºimagenn.PNG"  />
 
+
+
+## SERVICIOS DE DOMINIO DE ACTIVE DIRECTORY
+
+### ESTRUCTURA LÓGICA DEL DIRECTORIO ACTIVO
+
+Active Directory **permite** a los administradores  **organizar** los elementos de una red (como **usuarios, equipos y dispositivos) en una  estructura jerárquica y lógica.** Tambien almacena información acerca de los  objetos de la red, facilita la búsqueda, facilita el uso de esta información para los  usuarios y los administradores. **Los administradores**  tienen el **control de la seguridad** de los objetos del Active Directory **mediante la  asignación/denegación de permisos** a los distintos recursos
+
+Objetos de Active Directory:
+
+- Recursos compartidos.
+- Servidores. 
+- Volúmenes.
+- Impresoras.
+- Cuentas de equipo.
+- Usuario de red.
+
+Estructura:
+
+<img src="/img/7ºimagenn.PNG"  />
+
+- **Bosque de Active Directory**: Conjunto de uno o más dominios Active Directory que  comparten estructura lógica, esquema de directorio, configuración de  directorio y un catálogo global.
+- **Dominio de Active Directory**: Un dominio es una **partición de un bosque de Active Directory**. La creación de diferentes dominios permite a las organizaciones replicar datos solo en donde  sea necesario. Admite varias funciones relacionadas con la  administración, entre las que se incluyen: 
+  - Identidad de usuario en toda la red. 
+  - Autenticación. 
+  - Relaciones de confianza. 
+  - Replicación.
+- **Unidades organizativas de Active Directory**: Se utilizan para formar una jerarquía de  contenedores, agrupando objetos con una configuración común, dentro de un  dominio. Se pueden aplicar sobre estas unidades directivas de grupo, Listas de control de acceso  (ACL), delegación de autoridad, etc.
+
+### IMPLEMENTADCION DE ACTIVE DIRECTORY DOMAIN SERVICE
+
+<img src="/img/8ºimagenn.PNG"  />
+
+Active Directory DS administra la estructura de la red de la organización y de las diferentes sedes  relacionadas, así como la gestión de varios bosques. La implementacion consta de tres fases:
+
+- **Fase de diseño**: En esta fase se realizará el diseño de la estructura lógica de Active Directory  DS con el fin de adaptar el servicio a las necesidades de cada una de las  divisiones de la organización.
+
+  Se deberán determinar el número de bosques que requiere la organización, los  dominios que se necesitarán y su diseño, infraestructura del sistema de nombres de  dominio (DNS) y las unidades organizativas para que permitan delegar la  administración (OU)
+
+  Las diferentes fases de diseño de la estructura lógica serían: 
+
+  - *Identificación de los participantes en el proyecto de implementación.* 
+
+  - *Diseño de Bosques.* 
+
+  - *Diseño de dominios y su ubicación en los bosques.* 
+
+  - *Diseño de la infraestructura DNS.* 
+
+  - *Diseño de las unidades organizativas.*
+
+  A continuacion se debera incluir el diseño de la topologia del sitio para la red de la organización. El diseño conlleva los siguientes pasos
+
+  - *Recopilación de la configuración de la red.* 
+
+  - *Planificación de ubicación de los controladores de dominio.* 
+
+  - *Diseño de sitio.* 
+
+  - *Diseño de enlaces a sitios.*
+
+  Tras el diseño de la topologia se procedera al diseño del uso de los controladores de dominio, hemos de tener en cuenta estos aspectos:
+
+  - *Recopilación de información del diseño de topología de sitio.* 
+
+  - *Determinación del número de controladores de dominio.* 
+
+  - *Diseño de sitio.* 
+
+  - *Evaluación de requisitos de hardware en los servidores controladores  de dominio.* 
+
+  - *Supervisión de rendimiento de cada controlador de dominio.*
+
+  Para concluir, se deberá determinar el nivel funcional del bosque y de cada uno de  los dominios, el nivel funcional dotará al entorno de una serie de características  adicionales
+
+- **Fase de implementación**: Se generará un laboratorio donde se procederá a implementar  el diseño propuesto en la fase anterior. Se comenzará con la implementación del nuevo dominio raíz del bosque, continuando  con la estructura del resto de dominios presentes en el diseño. Es posible que, como  parte de la implementación, se necesite actualizar y reestructurar un entorno existente  de Active Directory DS. Este Active Directory DS deberá estar representado en el  laboratorio.
+
+  - *Implementación del dominio raíz del bosque: El dominio raíz del bosque es el pilar fundamental de la infraestructura del  bosque, y es necesario implementarlo en primer lugar. A partir de él, se  desplegará el resto de la infraestructura. Los pasos para seguir para realizar  esta implementación serían las siguientes:*
+    - *Revisión del diseño de AD DS que se realizó previamente.*
+    - *Configuración de servicio DNS.* 
+    - *Crear el dominio raíz del bosque:* 
+      - *Implementación de controladores del dominio raíz del bosque*
+      -  *Configuración de la topología del sitio para dicho dominio.* 
+      - *Configuración de las funciones del maestro de  operaciones.*
+    - *Elevar los niveles de las funciones del maestro de operaciones.*
+  - *Implementación del resto de dominios: Despues de implementar el dominio raiz se implementaran. el resto de los bosques, árboles y dominios según  el diseño de Active Directory DS. Además, se definirán las relaciones de  confianza según esta establecido en el diseño. Estos son los pasos a seguir:*
+    - *Revisión del diseño.* 
+    - *Delegación de DNS para el nuevo dominio.* 
+    - *Implementación del primer controlador de dominio en el  nuevo dominio.* 
+    - *Implementación del resto de controladores de dominio en el  nuevo dominio.* 
+    - *Configuración del servidor DNS.* 
+    - *Configurar las funciones del maestro de operaciones.*
+
+-  **Fase de operaciones**: Será la encargada del mantenimiento y operatividad  del servicio de Active Directory DS.
+
+  
+
 ## BIBLIOGRAFIA y AGRADECIMIENTOS
 
 Esta guía básica no podía haber sido realizada sin la ayuda de este curso:
