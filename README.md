@@ -135,7 +135,7 @@ Estructura:
 
 ### IMPLEMENTADCION DE ACTIVE DIRECTORY DOMAIN SERVICE
 
-<img src="/img/8ºimagenn.PNG"  />
+<img src="/img/8ºimagenn.png"  />
 
 Active Directory DS administra la estructura de la red de la organización y de las diferentes sedes  relacionadas, así como la gestión de varios bosques. La implementacion consta de tres fases:
 
