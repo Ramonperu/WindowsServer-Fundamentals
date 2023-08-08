@@ -232,11 +232,11 @@ MS Windows Server 2016 tiene cuatro consolas de MMC (**Microsoft Management Cons
 
 <img src="/img/10ºimagenn.PNG"  />
 
-- Dominios y confianzas de Active Directory: Configura y mantiene las relaciones de confianza entre dominios, además mantiene los niveles funcionales de dominio y de bosque
+- **Dominios y confianzas de Active Directory**: Configura y mantiene las relaciones de confianza entre dominios, además mantiene los niveles funcionales de dominio y de bosque
 
   <img src="/img/11ºimagenn.PNG"  />
 
-- Esquema de Active Directory: Examina y modifica la definición de los diferentes atributos y clases que definen a los objetos del Directorio Activo. Debido a su escasa utilización, esta consola no se instala por defecto en el sistema, como el resto de las consolas.
+- **Esquema de Active Directory**: Examina y modifica la definición de los diferentes atributos y clases que definen a los objetos del Directorio Activo. Debido a su escasa utilización, esta consola no se instala por defecto en el sistema, como el resto de las consolas.
 
   <img src="/img/12ºimagenn.PNG"  />
 
@@ -335,9 +335,9 @@ Las GPOs contienen una o más configuraciones de políticas de grupo que aplican
 
 Estos son los tres estados posibles de las politicas de grupo(Existen comportamientos distintos a estos estados):
 
-- Habilitado: Cuando una política de grupo se encuentra en estado Habilitado, aplica lo que indica su definición. 
-- Deshabilitado: Desactiva una característica o deniega el acceso a algún recurso.
-- No configurado: La política no cambiará nada de la configuración previa existente relacionada con esa configuración específica.(Estado por defecto).
+- **Habilitado**: Cuando una política de grupo se encuentra en estado Habilitado, aplica lo que indica su definición. 
+- **Deshabilitado**: Desactiva una característica o deniega el acceso a algún recurso.
+- **No configurado**: La política no cambiará nada de la configuración previa existente relacionada con esa configuración específica.(Estado por defecto).
 
 Cada una de las directivas presenta una pestaña denominada “Explicación” que contiene una descripción detallada del comportamiento.
 
@@ -375,7 +375,7 @@ Para editar una GPO se utiliza el “Editor de administración de directivas de 
 
 Subdivididas en:
 
-- Directivas. En este contenedor se almacenan las directivas de seguridad y las  plantillas administrativas que se propagan a los diferentes equipos, a los que  afecta la GPO, y fuerzan cambios en la configuración del registro. Subdivididas a su vez tanto como para equipos como para usuarios
+- **Directivas**. En este contenedor se almacenan las directivas de seguridad y las  plantillas administrativas que se propagan a los diferentes equipos, a los que  afecta la GPO, y fuerzan cambios en la configuración del registro. Subdivididas a su vez tanto como para equipos como para usuarios
 
   - *Configuración de Software: Contiene una serie de parámetros relativos a  programas:* 
 
@@ -393,7 +393,7 @@ Subdivididas en:
 
   - *Plantillas administrativas: Contiene cientos de configuraciones de seguridad y  de preferencias del sistema. Existen plantillas específicas para configurar,  mediante GPOs, programas que no necesariamente deben ser de Microsoft.*
 
-- Preferencias. Contiene menús de configuración. Así mismo, mientras que las directivas aplicadas a  través de GPOs en un equipo no pueden ser cambiadas por el usuario, las  preferencias sí.
+- **Preferencias**. Contiene menús de configuración. Así mismo, mientras que las directivas aplicadas a  través de GPOs en un equipo no pueden ser cambiadas por el usuario, las  preferencias sí.
 
 ### GESTION DE POLÍTICAS DE SEGURIDAD
 
@@ -407,8 +407,8 @@ Las GPOs pueden ser vinculadas a los siguientes objetos contenedores:
 
 GPOs predeterminadas:
 
-- Default Domain Policy: Esta GPO está vinculada al dominio y no incluye grupo de seguridad o filtros WMI. Afecta a la seguridad de todos sus equipos y  usuarios. Contiene las directivas de seguridad de contraseñas, el comportamiento para desbloquear la sesión y el protocolo Kerberos. Según las prácticas recomendadas por Microsoft, Esta GPO no debería tener ninguna otra directiva configurada que las que lleva configuradas por defecto.  Lo habitual es que los administradores creen una nueva GPO con las directivas configuradas y vincularla al dominio. 
-- Default Domain Controllers Policy: Esta GPO está vinculada a la unidad  organizativa “Domain Controllers” y debería afectar, únicamente, a los  controladores de dominio (no se deben añadir objetos a esta unidad organizativa que no sean controladores de dominio). Default Domain  Controllers Policy ha sido diseñada para proporcionar configuraciones sobre auditoría y derechos de los usuarios.
+- **Default Domain Policy**: Esta GPO está vinculada al dominio y no incluye grupo de seguridad o filtros WMI. Afecta a la seguridad de todos sus equipos y  usuarios. Contiene las directivas de seguridad de contraseñas, el comportamiento para desbloquear la sesión y el protocolo Kerberos. Según las prácticas recomendadas por Microsoft, Esta GPO no debería tener ninguna otra directiva configurada que las que lleva configuradas por defecto.  Lo habitual es que los administradores creen una nueva GPO con las directivas configuradas y vincularla al dominio. 
+- **Default Domain Controllers Policy**: Esta GPO está vinculada a la unidad  organizativa “Domain Controllers” y debería afectar, únicamente, a los  controladores de dominio (no se deben añadir objetos a esta unidad organizativa que no sean controladores de dominio). Default Domain  Controllers Policy ha sido diseñada para proporcionar configuraciones sobre auditoría y derechos de los usuarios.
 
 Por defecto, lo normal es que una GPO aplique a todos los objetos del contenedor y los objetos de contenedores de niveles inferiores van heredando las configuraciones de  dicha GPO. A través del filtrado de seguridad, es posible cambiar este comportamiento  y, de este modo, tener la certeza de que las directivas solamente aplican a un grupo  determinado de usuarios de esa unidad organizativa. El filtrado WMI, en cambio, se  define en el contenedor de filtros WMI. Mediante estas consultas WMI podemos  especificar qué excluir o incluir en la GPO. Estos se pueden crear desde la consola de administracion de directivas de grupo.
 
