@@ -6,7 +6,7 @@ Bienvenidos a la guía básica, para principiantes, sobre Windows Server 2016 re
 
 Requisitos mínimos para la instalación de Windows Server
 
-<img src="/img/3ºimagenn.PNG"  />
+<img align="center" src="/img/3ºimagenn.PNG"  />
 
 Cuando se instala Windows Server 2016 mediante  el Asistente para la instalación, puede elegir entre Windows Server 2016 y Windows Server 2016 (Servidor con Experiencia de escritorio)
 
@@ -26,7 +26,7 @@ La opción Servidor con Experiencia de escritorio instala la interfaz de usuario
 
 ## ROLES:
 
-<img src="/img/2ºimagenn.PNG"  />
+<img align="center" src="/img/2ºimagenn.PNG"  />
 
 Los roles de servidor cumplen los siguientes puntos: 
 
@@ -50,7 +50,7 @@ Los servicios de rol proporcionan o amplían alguna funcionalidad a un rol. Cuan
 
 ### PROCESO DE INSTALACION DE ROLES Y CARACTERISTICAS
 
-<img src="/img/1ºimagenn.PNG"  />
+<img align="center" src="/img/1ºimagenn.PNG"  />
 
 1. En el escritorio de Windows, haga clic en "Administrador del servidor” en la  barra de tareas de Windows. 
 
@@ -70,13 +70,13 @@ algunos de los roles más importantes para la  configuración de un entorno de r
 
 - **Servicios de dominio de Active Directory**: Este rol permite organizar de forma centralizada los diferentes elementos de la  empresa mediante la creación de objetos como usuarios, equipos o grupos de  seguridad. Así mismo, se podrán administrar las políticas de seguridad sobre los usuarios y equipos.
 
-  <img src="/img/4ºimagenn.PNG"  />
+  <img align="center" src="/img/4ºimagenn.PNG"  />
 
 - **Servidor DNS:** Este rol proporciona resolución de nombres para las redes TCP/IP. Es más fácil  de administrar cuando está instalado en el mismo servidor que los Servicios de  Dominio de Active Directory. DNS (Sistema de nombres de dominio) permite, de manera jerárquica y distribuida en árbol, establecer nombres a los equipos, servicios o recursos conectados a internet o a una red privada y es capaz de resolver tanto el nombre del dominio a partir de la dirección IP como la dirección IP a partir del nombre de dominio.
 
   
 
-  <img src="/img/5ºimagenn.PNG"  />
+  <img align="center" src="/img/5ºimagenn.PNG"  />
 
   
 
@@ -102,7 +102,7 @@ Las características son una serie de programas que no forman parte de los roles
 
 También existe la posibilidad de que una característica sea una dependencia o  prerrequisito para la instalación de un rol.
 
-<img src="/img/6ºimagenn.PNG"  />
+<img align="center" src="/img/6ºimagenn.PNG"  />
 
 
 
@@ -123,7 +123,7 @@ Objetos de Active Directory:
 
 Estructura:
 
-<img src="/img/7ºimagenn.PNG"  />
+<img align="center" src="/img/7ºimagenn.PNG"  />
 
 - **Bosque de Active Directory**: Conjunto de uno o más dominios Active Directory que  comparten estructura lógica, esquema de directorio, configuración de  directorio y un catálogo global.
 - **Dominio de Active Directory**: Un dominio es una **partición de un bosque de Active Directory**. La creación de diferentes dominios permite a las organizaciones replicar datos solo en donde  sea necesario. Admite varias funciones relacionadas con la  administración, entre las que se incluyen: 
@@ -135,7 +135,7 @@ Estructura:
 
 ### IMPLEMENTADCION DE ACTIVE DIRECTORY DOMAIN SERVICE
 
-<img src="/img/8ºimagenn.png"  />
+<img align="center" src="/img/8ºimagenn.png"  />
 
 Active Directory DS administra la estructura de la red de la organización y de las diferentes sedes  relacionadas, así como la gestión de varios bosques. La implementacion consta de tres fases:
 
@@ -226,23 +226,23 @@ MS Windows Server 2016 tiene cuatro consolas de MMC (**Microsoft Management Cons
 
 - **Usuarios y equipos de Active Directory**: Administra los recursos más cotidianos  incluyendo usuarios, grupos y equipos. Es la herramienta mas usada en tareas de administracion de Directorio Activo.
 
-<img src="/img/9ºimagenn.PNG"  />
+<img align="center" src="/img/9ºimagenn.PNG"  />
 
 - **Sitios y servicios de Active Directory**: Administra la replicación de la topología y  servicios del entorno de red.
 
-<img src="/img/10ºimagenn.PNG"  />
+<img align="center" src="/img/10ºimagenn.PNG"  />
 
 - **Dominios y confianzas de Active Directory**: Configura y mantiene las relaciones de confianza entre dominios, además mantiene los niveles funcionales de dominio y de bosque
 
-  <img src="/img/11ºimagenn.PNG"  />
+  <img align="center" src="/img/11ºimagenn.PNG"  />
 
 - **Esquema de Active Directory**: Examina y modifica la definición de los diferentes atributos y clases que definen a los objetos del Directorio Activo. Debido a su escasa utilización, esta consola no se instala por defecto en el sistema, como el resto de las consolas.
 
-  <img src="/img/12ºimagenn.PNG"  />
+  <img align="center" src="/img/12ºimagenn.PNG"  />
 
 Ademas existe la opción de administrar los diferentes objetos de Active Directory DS a través del Centro Administrativo de Active  Directory. Por medio de esta herramienta, basada en la gestión de tareas, es  posible: 
 
-<img src="/img/13ºimagenn.PNG"  />
+<img align="center" src="/img/13ºimagenn.PNG"  />
 
 - Crear y administrar cuentas de usuarios, equipos y grupos. 
 - Crear y administrar Unidades Organizativas. 
@@ -315,7 +315,7 @@ Las directivas de grupo se utilizan principalmente para restringir aquellas acci
 
 La consola de “Administración de directivas de grupo” es la que permitirá administrar los diferentes objetos de directivas de grupos.
 
-<img src="/img/14ºimagenn.PNG"  />
+<img align="center" src="/img/14ºimagenn.PNG"  />
 
 Hemos de definir dos conceptos basicos:
 
@@ -325,7 +325,7 @@ Hemos de definir dos conceptos basicos:
 
   Los objetos de directivas de grupo y las políticas que los componen pueden ser editados mediante el “Editor de administración de directivas de grupo”.
 
-  <img src="/img/15ºimagenn.PNG"  />
+  <img align="center" src="/img/15ºimagenn.PNG"  />
 
 ### POLITICAS Y DIRECTIVAS
 
@@ -341,7 +341,7 @@ Estos son los tres estados posibles de las politicas de grupo(Existen comportami
 
 Cada una de las directivas presenta una pestaña denominada “Explicación” que contiene una descripción detallada del comportamiento.
 
-<img src="/img/16ºimagenn.PNG"  />
+<img align="center" src="/img/16ºimagenn.PNG"  />
 
 Al configurar una GPO se almacena el contenido en dos localizaciones:
 
@@ -431,7 +431,7 @@ Los siguientes grupos de usuarios tienen acceso completo a la consola de  admini
 
 Orden de aplicacion de las GPOs:
 
-<img src="/img/17ºimagenn.PNG"  />
+<img align="center" src="/img/17ºimagenn.PNG"  />
 
 Se pueden realizar copias importacion y exportacion de estas GPOS:
 
